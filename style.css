@@ -1,0 +1,25 @@
+/* Background color for navbar */
+
+.navBar {
+	background-color: #000;
+	overflow: hidden;
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1024px;
+}
+
+/* Style for links in navbar */
+.navBar a {
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+/* Change color of link in navbar on hover */
+.navBar a:hover {
+	background-color: #ddd;
+	color: black;
+}
