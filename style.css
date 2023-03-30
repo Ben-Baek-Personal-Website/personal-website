@@ -1,5 +1,8 @@
-/* Background color for navbar */
+.body {
+	font-family: "Merriweather", serif;
+}
 
+/* Background color for navbar */
 .navBar {
 	background-color: #000;
 	overflow: hidden;
