@@ -1,13 +1,16 @@
+html,
 body {
-	display: inline-block;
-	width: 100%;
-	max-width: 1024px;
+	height: 100%;
 	font-family: "Merriweather", serif;
-	min-width: 320px;
 	font-size: 18px;
-	margin-left: 150px;
-	margin-right: 150px;
 	background-color: #000;
+}
+
+.navbarContainer {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: row;
 }
 
 /* Background color for navbar */
@@ -36,9 +39,20 @@ body {
 	color: black;
 }
 
+.pageContainer {
+	display: flex;
+	justify-content: center;
+}
+
 .page-Contents {
 	max-width: 1024px;
 	color: #f2f2f2;
+}
+
+.listContainer {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
 }
 
 .imgContainer {
