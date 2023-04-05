@@ -3,6 +3,7 @@ body {
 	height: 130%;
 	font-family: "Merriweather", serif;
 	font-size: 18px;
+
 	background-color: #000;
 }
 
@@ -11,12 +12,19 @@ body {
 	justify-content: center;
 	align-items: flex-start;
 	flex-direction: row;
+	padding: 10px 15px;
+}
+
+.myName {
+	color: #f2f2f2;
+	display: inline-block;
+	margin: 0 auto;
 }
 
 /* Background color for navbar */
 .navBar {
 	background-color: #000;
-	text-align: center;
+	text-align: right;
 	overflow: hidden;
 	margin: 0 auto;
 	box-sizing: border-box;
@@ -45,8 +53,9 @@ body {
 }
 
 .page-Contents {
-	max-width: 1024px;
+	max-width: 2560px;
 	color: #f2f2f2;
+	padding: 25px;
 }
 
 .categoryContainer {
@@ -62,19 +71,64 @@ body {
 	padding: 0px 15px;
 }
 
-/* .listContainer ul {
-	display: inline-block;
-	margin-left: -40px;
-	padding: 15px;
-}
-
-ul li {
-	text-align: left;
-} */
-
 .imgContainer {
 	text-align: center;
 	margin-left: 15px;
 	padding: 10px;
 	border: dashed;
+}
+
+.projects {
+	display: grid;
+	gap: 0px 0px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		". projectOne projectOne projectOne ."
+		". projectTwo projectTwo projectTwo ."
+		". projectThree projectThree projectThree ."
+		". . . . ."
+		". . . . .";
+}
+
+.projectOne,
+.projectTwo,
+.projectThree {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+.projectOne {
+	grid-template-areas: "project-title project-info project-tools";
+
+	grid-area: projectOne;
+}
+
+.projectTwo {
+	grid-template-areas: "project-title project-info project-tools";
+
+	grid-area: projectTwo;
+}
+
+.projectThree {
+	grid-template-areas: "project-title project-info project-tools";
+
+	grid-area: projectThree;
+}
+
+.projectTwo {
+	grid-area: projectTwo;
+}
+.projectThree {
+	grid-area: projectThree;
+}
+
+.project-title {
+	grid-area: project-title;
+}
+.project-info {
+	grid-area: project-info;
+}
+.project-tools {
+	grid-area: project-tools;
 }
