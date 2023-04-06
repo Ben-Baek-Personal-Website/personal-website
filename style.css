@@ -78,6 +78,9 @@ body {
 .imgContainer {
 	text-align: center;
 	margin-left: 15px;
+}
+
+img {
 	padding: 10px;
 	border: dashed;
 }
