@@ -3,7 +3,6 @@ body {
 	height: 130%;
 	font-family: "Merriweather", serif;
 	font-size: 18px;
-
 	background-color: #000;
 }
 
@@ -47,20 +46,25 @@ body {
 	color: black;
 }
 
-.pageContainer {
+.titleContainer {
 	display: flex;
 	justify-content: center;
 }
 
-.page-Contents {
+.pageContainer {
+	display: flex;
+	justify-content: center;
 	max-width: 2560px;
+}
+
+.page-Contents {
 	color: #f2f2f2;
 	padding: 25px;
 }
 
-.categoryContainer {
+.categoryContainer,
+.project {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 0px 0px;
 }
@@ -78,27 +82,18 @@ body {
 	border: dashed;
 }
 
-.projects {
-	display: grid;
-	gap: 0px 0px;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-areas:
-		". projectOne projectOne projectOne ."
-		". projectTwo projectTwo projectTwo ."
-		". projectThree projectThree projectThree ."
-		". . . . ."
-		". . . . .";
+.project {
+	width: 80%;
+	margin-left: 10%;
 }
 
-.projectOne,
-.projectTwo,
-.projectThree {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
+.projectTitle,
+.projectInfo,
+.projectTools {
+	width: 70%;
 }
-.projectOne {
+
+/* .projectOne {
 	grid-template-areas: "project-title project-info project-tools";
 
 	grid-area: projectOne;
@@ -131,4 +126,4 @@ body {
 }
 .project-tools {
 	grid-area: project-tools;
-}
+} */
