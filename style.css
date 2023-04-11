@@ -96,37 +96,8 @@ img {
 	width: 70%;
 }
 
-/* .projectOne {
-	grid-template-areas: "project-title project-info project-tools";
-
-	grid-area: projectOne;
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
 }
-
-.projectTwo {
-	grid-template-areas: "project-title project-info project-tools";
-
-	grid-area: projectTwo;
-}
-
-.projectThree {
-	grid-template-areas: "project-title project-info project-tools";
-
-	grid-area: projectThree;
-}
-
-.projectTwo {
-	grid-area: projectTwo;
-}
-.projectThree {
-	grid-area: projectThree;
-}
-
-.project-title {
-	grid-area: project-title;
-}
-.project-info {
-	grid-area: project-info;
-}
-.project-tools {
-	grid-area: project-tools;
-} */
