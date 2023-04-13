@@ -106,16 +106,53 @@ img {
 input[type="text"],
 input[type="email"],
 textarea {
-	width: 100%;
+	width: 150%;
 }
 
-@media (max-width: 768px) {
+/* iPad */
+@media (max-width: 810px) {
 	#undergroundStationImg {
 		width: calc(700px / 3);
 		height: calc(250px / 3);
 	}
 
-	.project {
+	.categoryContainer {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+/* IPhone */
+@media (max-width: 414px) {
+	.pageContainer {
+		max-width: fit-content;
+	}
+	.page-Contents {
+		padding: 8px;
 		margin-left: 0px;
+		align-items: center;
+	}
+	.project {
+		width: 50%;
+		margin-left: 0;
+	}
+
+	.navbarContainer {
+		width: fit-content;
+
+		flex-direction: column;
+	}
+
+	.navBar {
+		text-align: left;
+	}
+
+	.navBar a {
+		text-align: center;
+		padding: 0px 15px;
+	}
+
+	form {
+		margin-left: 10%;
 	}
 }
